@@ -5,7 +5,7 @@ result = text.split(/((?<=[a-z0-9)][.?!])|(?<=[a-z0-9][.?!]"))\s+(?="?[A-Z])/)
 result.each do |num|
   count = result[num]
   if num == " "
-    result.delete(count)!
+    result.delete(count)
   end
 end
 puts result.size
