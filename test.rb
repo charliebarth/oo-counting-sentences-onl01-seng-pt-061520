@@ -5,4 +5,4 @@ result = text.split(/((?<=[a-z0-9)][.?!])|(?<=[a-z0-9][.?!]"))\s+(?="?[A-Z])/)
 new_array = []
 new_string = result.join("|")
 new_array << new_string.split("|")
-puts new_array
+puts new_array.size
