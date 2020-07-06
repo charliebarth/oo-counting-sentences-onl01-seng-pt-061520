@@ -4,7 +4,7 @@ result = text.split(/((?<=[a-z0-9)][.?!])|(?<=[a-z0-9][.?!]"))\s+(?="?[A-Z])/)
 
 result.each do |num|
   if num == " "
-    num.delete!
+    result.delete
   end
 end
 puts result.size
