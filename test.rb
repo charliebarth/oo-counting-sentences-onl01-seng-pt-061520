@@ -4,4 +4,5 @@ result = text.split(/((?<=[a-z0-9)][.?!])|(?<=[a-z0-9][.?!]"))\s+(?="?[A-Z])/)
 
 puts result
 new_string = result.join("|")
-puts new_string.split("|")
+new_array = new_string.split("|")
+puts new_array.size
