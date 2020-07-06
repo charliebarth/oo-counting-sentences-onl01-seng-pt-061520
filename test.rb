@@ -3,8 +3,9 @@ text = "Hipsters are everywhere! Even in Home Depot? Flannel wrench set in ma fa
 result = text.split(/((?<=[a-z0-9)][.?!])|(?<=[a-z0-9][.?!]"))\s+(?="?[A-Z])/)
 
 result.each do |num|
+  count = result[num]
   if num == " "
-    result.delete
+    result.delete(count)!
   end
 end
 puts result.size
