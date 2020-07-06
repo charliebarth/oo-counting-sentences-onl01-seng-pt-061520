@@ -5,7 +5,7 @@ new_array = []
 result.each do |num|
   count = result.index("#{num}")
   if num == " "
-    result.delete!(count)
+    result.delete(count)
   end
 end
 puts result.size
